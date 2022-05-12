@@ -105,10 +105,17 @@
                                 <input type="text" id="date" class="datepicker">
                                 <label for="date">Compagny</label>
                             </div>
-                            <div class="input-field center">
-                                <input type="text" id="date" class="datepicker">
-                                <label for="date"> <a class='dropdown-trigger' href='#' data-target='dropdown1'>Select Role</a></label>
-                            </div>
+                            <div class="input-field col s12">
+                                <select>
+                                  <option value="" disabled selected>Select Role</option>
+                                  <option value="1">Professional Developer</option>
+                                  <option value="2">Manager</option>
+                                  <option value="3">Student</option>
+                                  <option value="4">Hobbyist</option>
+                                  <option value="5">Programer</option>
+                                </select>
+                                <label>Materialize Select</label>
+                              </div>
                             <div class="input-field center">
                                 <a class="btn-small purple" style="width: 100%;">Sign Up</a>
                             </div>
@@ -168,6 +175,9 @@
      $('.tabs').tabs();
      $('.modal').modal();
    });
+   $(document).ready(function(){
+    $('select').formSelect();
+  });
  </script>
 </body>
 </html>
